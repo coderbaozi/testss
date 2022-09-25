@@ -1,0 +1,85 @@
+[10:07:05.337][ERRO] FetchError: request to https://api.trace.moe/search?anilistInfo=&cutBorders= failed, reason: Client network socket disconnected before secure TLS connection was established
+    at ClientRequest.<anonymous> (file:///D:/Project/Yunzai-Bot/node_modules/.pnpm/node-fetch@3.2.6/node_modules/node-fetch/src/index.js:108:11)
+    at ClientRequest.emit (node:events:539:35)
+    at TLSSocket.socketErrorListener (node:_http_client:454:9)
+    at TLSSocket.emit (node:events:527:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  type: 'system',
+  errno: 'ECONNRESET',
+  code: 'ECONNRESET',
+  erroredSysCall: undefined
+}
+[10:13:22.224][ERRO] [截图预览网页内容][webPreview]
+[10:13:22.225][ERRO] ProtocolError: Protocol error (Page.navigate): Cannot navigate to invalid URL
+    at D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\Connection.js:230:24
+    at new Promise (<anonymous>)
+    at CDPSession.send (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\Connection.js:226:16)
+    at navigate (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\FrameManager.js:149:47)
+    at FrameManager.navigateFrame (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\FrameManager.js:132:13)
+    at Frame.goto (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\FrameManager.js:512:41)
+    at Page.goto (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\Page.js:1167:53)
+    at webPreview (file:///D:/Project/Yunzai-Bot/plugins/suiyue/apps/webPreview.js:51:20)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PluginsLoader.deal (file:///D:/Project/Yunzai-Bot/lib/plugins/loader.js:248:52)
+[10:40:44.041][ERRO] [小飞天气插件v1.2][query_weather]
+[10:40:44.042][ERRO] TimeoutError: Navigation timeout of 30000 ms exceeded
+    at D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\LifecycleWatcher.js:108:111
+[10:43:08.172][ERRO] 载入插件错误：[31mexample/test.js[39m
+[10:43:08.173][ERRO] SyntaxError: Invalid left-hand side in assignment
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:117:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:337:14)
+    at async link (node:internal/modules/esm/module_job:70:21)
+[10:45:10.531][ERRO] 载入插件错误：[31mexample/test.js[39m
+[10:45:10.531][ERRO] SyntaxError: Invalid left-hand side in assignment
+    at ESMLoader.moduleStrategy (node:internal/modules/esm/translators:117:18)
+    at ESMLoader.moduleProvider (node:internal/modules/esm/loader:337:14)
+    at async link (node:internal/modules/esm/module_job:70:21)
+[10:46:12.816][ERRO] [小飞天气插件v1.2][query_weather]
+[10:46:12.817][ERRO] TimeoutError: Navigation timeout of 30000 ms exceeded
+    at D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\LifecycleWatcher.js:108:111
+[10:56:54.592][ERRO] [小飞天气插件v1.2][query_weather]
+[10:56:54.593][ERRO] Error: options.clip and options.fullPage are exclusive
+    at assert (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\assert.js:26:15)
+    at Page.screenshot (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\Page.js:1968:32)
+    at ElementHandle.screenshot (D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\JSHandle.js:768:44)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async weather (file:///D:/Project/Yunzai-Bot/plugins/example/test.js:123:2)
+    at async xiaofei_weather.query_weather (file:///D:/Project/Yunzai-Bot/plugins/example/test.js:31:3)
+    at async PluginsLoader.deal (file:///D:/Project/Yunzai-Bot/lib/plugins/loader.js:248:52)
+[10:58:25.727][ERRO] [小飞天气插件v1.2][query_weather]
+[10:58:25.728][ERRO] TimeoutError: Navigation timeout of 30000 ms exceeded
+    at D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\LifecycleWatcher.js:108:111
+[11:00:09.334][ERRO] [小飞天气插件v1.2][query_weather]
+[11:00:09.335][ERRO] TimeoutError: Navigation timeout of 30000 ms exceeded
+    at D:\Project\Yunzai-Bot\node_modules\.pnpm\puppeteer@13.7.0\node_modules\puppeteer\lib\cjs\puppeteer\common\LifecycleWatcher.js:108:111
+[16:12:52.900][ERRO] Error: Cannot find module 'nodejieba'
+Require stack:
+- D:\Project\Yunzai-Bot\plugins\suiyue\apps\textrank.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at textrank.getExtract (file:///D:/Project/Yunzai-Bot/plugins/suiyue/apps/textrank.js:161:29)
+    at textrank.dayrank (file:///D:/Project/Yunzai-Bot/plugins/suiyue/apps/textrank.js:148:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async PluginsLoader.deal (file:///D:/Project/Yunzai-Bot/lib/plugins/loader.js:248:52) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\Project\\Yunzai-Bot\\plugins\\suiyue\\apps\\textrank.js' ]
+}
+[16:23:31.318][ERRO] Error: Cannot find module 'nodejieba'
+Require stack:
+- D:\Project\Yunzai-Bot\plugins\suiyue\apps\textrank.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at textrank.getExtract (file:///D:/Project/Yunzai-Bot/plugins/suiyue/apps/textrank.js:161:29)
+    at textrank.dayrank (file:///D:/Project/Yunzai-Bot/plugins/suiyue/apps/textrank.js:86:18)
+    at PluginsLoader.deal (file:///D:/Project/Yunzai-Bot/lib/plugins/loader.js:244:55)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [ 'D:\\Project\\Yunzai-Bot\\plugins\\suiyue\\apps\\textrank.js' ]
+}

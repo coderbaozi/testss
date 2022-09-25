@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="shortcut icon" href="#" />
+	<link rel="stylesheet" type="text/css" href="D:/Project/Yunzai-Bot/plugins/suiyue/resources/html/textrank/textrank.css" />
+	<link rel="preload" href="https://unpkg.com/@antv/g2plot@latest/dist/g2plot.min.js" as="script" />
+</head>
+
+<body>
+	<div class="container" id="container">
+		<div class="data_box">
+			<div id="chartContainer"></div>
+		</div>
+
+<!-- 		<div class="logo">Created By Yunzai-Bot & suiyue-plugin</div> -->
+
+	</div>
+</body>
+<script type="text/javascript" src="https://unpkg.com/@antv/g2plot@latest/dist/g2plot.min.js"></script>
+<script>
+	const { WordCloud } = G2Plot;
+
+	const chartData = JSON.parse(`[{"word":"天气","weight":193.7983183377},{"word":"疫情","weight":64.6923769612},{"word":"cn","weight":46.95681722833417},{"word":"花溪区","weight":41.702032956000004},{"word":"星期四","weight":30.2161087665},{"word":"贵阳","weight":26.33014101771},{"word":"weather","weight":23.478408614167083},{"word":"www","weight":23.478408614167083},{"word":"zh","weight":23.478408614167083},{"word":"eyJsIjoi6LS16Ziz5biCIiwiciI6Iui0teW3nuecgSIsImMiOiLkuK3ljY7kurrmsJHlhbHlkozlm70iLCJpIjoiQ04iLCJnIjoiemgtY24iLCJ4IjoxMDYuNjY2MTM3Njk1MzEyNSwieSI6MjYuNDQzMzI4ODU3NDIxODc1fQ","weight":23.478408614167083},{"word":"loc","weight":23.478408614167083},{"word":"weadegreetype","weight":23.478408614167083},{"word":"forecast","weight":23.478408614167083},{"word":"msn","weight":23.478408614167083},{"word":"https","weight":23.478408614167083},{"word":"删除","weight":23.06421466866},{"word":"推送","weight":22.2561778594},{"word":"日志","weight":21.066763644},{"word":"贵阳市","weight":19.9773092931},{"word":"关键词","weight":17.80693075642},{"word":"贵州省","weight":16.97806320024},{"word":"功能","weight":16.535317442580002},{"word":"添加","weight":16.0969503444},{"word":"美图","weight":13.900677652},{"word":"原神","weight":11.739204307083542},{"word":"天去","weight":11.739204307083542},{"word":"搜番","weight":11.739204307083542},{"word":"群聊","weight":11.739204307083542},{"word":"复读","weight":11.1280889297},{"word":"菜单","weight":10.1630080337},{"word":"定时","weight":8.71329184614},{"word":"机器人","weight":8.4801426527},{"word":"开启","weight":7.77599426108},{"word":"贵州","weight":6.83591862418},{"word":"任务","weight":5.62301149112},{"word":"今日","weight":4.98914771024}]`);
+
+	const wc = new WordCloud("chartContainer", {
+		data: chartData,
+		wordField: 'word',
+		weightField: 'weight',
+		colorField: 'word',
+		animation: false,
+		autoFit:true,
+		wordStyle: {
+			fontFamily: 'Verdana',
+			fontSize: [18, 50],
+		},
+	});
+	wc.render();
+
+</script>
+
+</html>
